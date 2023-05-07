@@ -1,0 +1,13 @@
+# create a function that convets a text input to pig latin
+
+def pig_it(text):
+    t = text.split(' ')
+    res = []
+    for i in range(0, len(t)):
+        if t[i] in '!?':
+            res.append(t[i])
+        else:
+            y = t[i]
+            x = (y)[1:]+(y)[0]+'ay'
+            res.append(x)
+    return ' '.join(res)
