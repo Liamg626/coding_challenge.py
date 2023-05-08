@@ -1,0 +1,4 @@
+# write a function that takes a list of numbers and converts them to a string using only 1 line of code
+
+def convert(list):
+    return [str(list[i]) for i in range(0, len(list))]
