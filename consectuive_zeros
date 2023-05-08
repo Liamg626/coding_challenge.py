@@ -1,0 +1,10 @@
+# write a function that find the longest line of consecutive zeros in a binary string and returns the number
+
+def consecutive_zeros(x):
+    a = x.split('1')
+    count = 0
+    for i in range(0,len(a)):
+        b = a[i].count('0')
+        if int(b) > count:
+            count = b
+    return count
