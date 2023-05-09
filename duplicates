@@ -1,0 +1,14 @@
+# create a function that counts the number of duplicates in a string
+
+def duplicate_count(text):
+    res = []
+    text = text.lower()
+    for i in range(0, len(text)):
+        for j in range(0, len(text)):
+            if i == j:
+                continue
+            if text[j] == text[i]:
+                if text[i] not in res:
+                    res.append(text[i])
+    return len(res)
+    
