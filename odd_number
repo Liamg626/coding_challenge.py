@@ -1,0 +1,9 @@
+# write a function that returns the odd number in a list of integers
+
+def find_it(seq):
+    res = []
+    for i in range(0, len(seq)):
+        x = seq.count(seq[i])
+        if x % 2 != 0:
+            res.append(seq[i])
+    return res[0]
