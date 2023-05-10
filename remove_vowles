@@ -1,0 +1,7 @@
+# write a functino that removes vowels from a string and returns the new string
+
+def disemvowel(string_):
+    vowels = 'AEIOUaeiou'
+    for character in vowels:
+        string_ = string_.replace(character, '')
+    return string_
