@@ -1,0 +1,10 @@
+# write a function to find the middle character in a string, if the tring is even in length return 2 middle values
+
+def get_middle(s):
+    if len(s) % 2 == 0:
+        x = len(s)//2
+        y = x - 1
+        return s[y] + s[x]
+    else:
+        x = len(s)//2
+        return s[x]
