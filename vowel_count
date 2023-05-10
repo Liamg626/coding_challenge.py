@@ -1,0 +1,9 @@
+# write a function that counts the number of vowels in a string
+
+def get_count(sentence):
+    count = 0
+    vowels = 'AEIOUaeiou'
+    for letter in sentence:
+        if letter in vowels:
+            count += 1
+    return count
