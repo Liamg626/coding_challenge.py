@@ -1,0 +1,8 @@
+# write a function that converts a list of lists in to 1 single list
+
+def flatten(x):
+    res = []
+    for i in range(0,len(x)):
+        for j in x[i]:
+            res.append(j)
+    return res
