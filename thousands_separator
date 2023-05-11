@@ -1,0 +1,19 @@
+# write a function that takes a integer as an input and separates it by thousands. (10000 - 10,000)
+
+def format_number(int):
+    int = str(int)
+    int = int[::-1]
+    res = []
+    for i in range(0, len(int)):
+        if i > 0 and i % 3 == 0:
+            res.append(',')
+            res.append(int[i])
+        else:
+            res.append(int[i])
+    res = res[::-1]
+    return ''.join(res)
+    
+    # better
+    
+    def format_number(n):
+    return "{:,}".format(n)
