@@ -1,0 +1,7 @@
+# write a function that takes a list and returns whether all the items in the list are equal or not
+
+def all_equal(list):
+    for i in range(0, len(list)-1):
+        if list[i] != list[i + 1]:
+            return False
+    return True
