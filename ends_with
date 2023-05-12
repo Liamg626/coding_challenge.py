@@ -1,0 +1,4 @@
+# write functin that returns true if a string ends with an ending given an input of the string and the ending
+
+def solution(text, ending):
+    return text.endswith(ending)
